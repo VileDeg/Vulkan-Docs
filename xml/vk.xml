@@ -2217,17 +2217,6 @@ typedef void* <name>MTLSharedEvent_id</name>;
             <member len="releaseCount">const <type>VkDeviceMemory</type>*            <name>pReleaseSyncs</name></member>
             <member len="releaseCount">const <type>uint64_t</type>*                  <name>pReleaseKeys</name></member>
         </type>
-        <!-- <type category="struct" name="VkWin32KeyedMutexAcquireReleaseInfo2NV" structextends="VkSubmitInfo,VkSubmitInfo2">
-            <member values="VK_STRUCTURE_TYPE_WIN32_KEYED_MUTEX_ACQUIRE_RELEASE_INFO_2_NV"><type>VkStructureType</type> <name>sType</name></member>
-            <member optional="true">const <type>void</type>*                      <name>pNext</name></member>
-            <member optional="true"><type>uint32_t</type>                         <name>acquireCount</name></member>
-            <member len="acquireCount">const <type>VkDeviceMemory</type>*            <name>pAcquireSyncs</name></member>
-            <member len="acquireCount">const <type>uint64_t</type>*                  <name>pAcquireKeys</name></member>
-            <member len="acquireCount">const <type>uint32_t</type>*                  <name>pAcquireTimeoutMilliseconds</name></member>
-            <member optional="true"><type>uint32_t</type>                         <name>releaseCount</name></member>
-            <member len="releaseCount">const <type>VkDeviceMemory</type>*            <name>pReleaseSyncs</name></member>
-            <member len="releaseCount">const <type>uint64_t</type>*                  <name>pReleaseKeys</name></member>
-        </type> -->
         <type category="struct" name="VkPhysicalDeviceDeviceGeneratedCommandsFeaturesNV" structextends="VkPhysicalDeviceFeatures2,VkDeviceCreateInfo">
             <member values="VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_DEVICE_GENERATED_COMMANDS_FEATURES_NV"><type>VkStructureType</type> <name>sType</name></member>
             <member optional="true"><type>void</type>*    <name>pNext</name></member>
@@ -2619,17 +2608,6 @@ typedef void* <name>MTLSharedEvent_id</name>;
             <member len="releaseCount">const <type>VkDeviceMemory</type>* <name>pReleaseSyncs</name></member>
             <member len="releaseCount">const <type>uint64_t</type>* <name>pReleaseKeys</name></member>
         </type>
-        <!-- <type category="struct" name="VkWin32KeyedMutexAcquireReleaseInfo2KHR" structextends="VkSubmitInfo,VkSubmitInfo2">
-            <member values="VK_STRUCTURE_TYPE_WIN32_KEYED_MUTEX_ACQUIRE_RELEASE_INFO_2_KHR"><type>VkStructureType</type> <name>sType</name></member>
-            <member optional="true">const <type>void</type>*                      <name>pNext</name></member>
-            <member optional="true"><type>uint32_t</type>         <name>acquireCount</name></member>
-            <member len="acquireCount">const <type>VkDeviceMemory</type>* <name>pAcquireSyncs</name></member>
-            <member len="acquireCount">const <type>uint64_t</type>* <name>pAcquireKeys</name></member>
-            <member len="acquireCount">const <type>uint32_t</type>* <name>pAcquireTimeouts</name></member>
-            <member optional="true"><type>uint32_t</type>         <name>releaseCount</name></member>
-            <member len="releaseCount">const <type>VkDeviceMemory</type>* <name>pReleaseSyncs</name></member>
-            <member len="releaseCount">const <type>uint64_t</type>* <name>pReleaseKeys</name></member>
-        </type> -->
         <type category="struct" name="VkPhysicalDeviceExternalSemaphoreInfo">
             <member values="VK_STRUCTURE_TYPE_PHYSICAL_DEVICE_EXTERNAL_SEMAPHORE_INFO"><type>VkStructureType</type> <name>sType</name></member>
             <member optional="true">const <type>void</type>*                      <name>pNext</name></member>
@@ -14912,10 +14890,6 @@ typedef void* <name>MTLSharedEvent_id</name>;
             <command name="vkGetMemoryWin32Handle2KHR"/>
             <command name="vkGetMemoryWin32HandleProperties2KHR"/>
         </require>
-        <!-- <require comment="Promoted from VK_KHR_win32_keyed_mutex (extension 76)">
-            <enum offset="1" extends="VkStructureType" extnumber="76"          name="VK_STRUCTURE_TYPE_WIN32_KEYED_MUTEX_ACQUIRE_RELEASE_INFO_2_KHR"/>
-            <type name="VkWin32KeyedMutexAcquireReleaseInfo2KHR"/>
-        </require> -->
         <require comment="Promoted from VK_KHR_external_semaphore_win32 (extension 79)">
             <enum offset="4" extends="VkStructureType" extnumber="79"          name="VK_STRUCTURE_TYPE_IMPORT_SEMAPHORE_WIN32_HANDLE_INFO_2_KHR"/>
             <enum offset="5" extends="VkStructureType" extnumber="79"          name="VK_STRUCTURE_TYPE_EXPORT_SEMAPHORE_WIN32_HANDLE_INFO_2_KHR"/>
@@ -14939,10 +14913,6 @@ typedef void* <name>MTLSharedEvent_id</name>;
             <type name="VkExportMemoryWin32HandleInfo2NV"/>
             <command name="vkGetMemoryWin32Handle2NV"/>
         </require>
-        <!-- <require comment="Promoted from VK_NV_win32_keyed_mutex (extension 59)">
-            <enum offset="1" extends="VkStructureType" extnumber="59"          name="VK_STRUCTURE_TYPE_WIN32_KEYED_MUTEX_ACQUIRE_RELEASE_INFO_2_NV"/>
-            <type name="VkWin32KeyedMutexAcquireReleaseInfo2NV"/>
-        </require> -->
         <require comment="Promoted from VK_EXT_full_screen_exclusive (extension 256)">
             <enum offset="3" extends="VkStructureType" extnumber="256"          name="VK_STRUCTURE_TYPE_SURFACE_FULL_SCREEN_EXCLUSIVE_WIN32_INFO_2_EXT"/>
             <type name="VkSurfaceFullScreenExclusiveWin32Info2EXT"/>
